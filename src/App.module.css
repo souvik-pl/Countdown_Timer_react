@@ -1,0 +1,78 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 400px;
+    height: 200px;
+}
+
+.timer_container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.timer_container input {
+    width: 20%;
+    height: 40%;
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.timer_container input:disabled {
+    border: 2px solid green;
+    color: green;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.timer_container input::-webkit-outer-spin-button,
+.timer_container input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.timer_container input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.action_container {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action_container button {
+    width: 20%;
+    height: 60%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.action_container button:disabled {
+    cursor: default;
+}
+
+.action_container button.reset_btn {
+    background-color: #DD2C00;
+    margin-right: 20px;
+}
+
+.action_container button.start_btn {
+    background-color: #33691E;
+}
